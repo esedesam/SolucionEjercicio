@@ -1,3 +1,3 @@
 # Declaración de variables
 
-x = 33 # cómo que 33?????
+x = 35
