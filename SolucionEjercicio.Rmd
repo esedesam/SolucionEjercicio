@@ -60,5 +60,15 @@ cat("Nombres de las columnas:\n", colnames(Animals2), "\n")
 ```
   
   + Usa la función `intersect` y almacena en la variable commonAnimals los aminales que aparezcan en ambos conjuntos.
+  
+---
+
+Obtenemos los animales comunes a ambos datasets.
+
+```{r}
+commonAnimals <- intersect(rownames(mammals), rownames(Animals2))
+cat("Hay", length(commonAnimals), "animales en común:\n", commonAnimals)
+```
+  
   + Usa `setdiff` para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son?. ¿Qué tipo de animales son?
   + Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
