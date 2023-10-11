@@ -70,5 +70,26 @@ commonAnimals <- intersect(rownames(mammals), rownames(Animals2))
 cat("Hay", length(commonAnimals), "animales en común:\n", commonAnimals)
 ```
   
-  + Usa `setdiff` para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son?. ¿Qué tipo de animales son?
+  + Usa `setdiff` para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son? ¿Qué tipo de animales son?
+
+---
+
+```{r}
+diffAnimalsMammals <- setdiff(rownames(mammals), rownames(Animals2))
+cat("Hay", length(diffAnimalsMammals), "animales que solo aparecen en mammals:\n", diffAnimalsMammals, "\n")
+diffAnimalsAnimals2 <- setdiff(rownames(Animals2), rownames(mammals))
+cat("Hay", length(diffAnimalsAnimals2), "animales que solo aparecen en Animals2:\n", diffAnimalsAnimals2)
+```
+
   + Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
+
+---
+
+Las diferencias entre los animales que no aparecen en ambos conjuntos coinciden con estos subconjuntos, ya que, debido a cómo se han obtenido, no tienen ningún elemento en común.
+
+```{r}
+diff1 <- setdiff(diffAnimalsMammals, diffAnimalsAnimals2)
+cat("Hay", length(diff1), "animales que solo aparecen en mammals:\n", diff1, "\n")
+diff2 <- setdiff(diffAnimalsAnimals2, diffAnimalsMammals)
+cat("Hay", length(diff2), "animales que solo aparecen en Animals2:\n", diff2)
+```
