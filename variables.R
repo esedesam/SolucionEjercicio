@@ -1,0 +1,3 @@
+# Declaración de variables
+
+x = 33
