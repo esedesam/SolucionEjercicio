@@ -1,3 +1,3 @@
 # Declaración de variables
 
-x = 3512
+x = 555
