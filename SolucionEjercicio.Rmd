@@ -33,6 +33,31 @@ data("Animals2")
 
   + Mira la las características de ambos conjuntos usando la ayuda.
   + Usa las funciones `dim`, `head`, `tail`, `str` para una primera visión de los conjuntos de datos.
+
+---
+
+Para el dataset **mammals**:
+
+```{r}
+head(mammals)
+dim(mammals)
+tail(mammals)
+str(mammals)
+cat("Nombres de las filas:\n", rownames(mammals), "\n")
+cat("Nombres de las columnas:\n", colnames(mammals), "\n")
+```
+
+Para el dataset **mammals**:
+
+```{r}
+head(Animals2)
+dim(Animals2)
+tail(Animals2)
+str(Animals2)
+cat("Nombres de las filas:\n", rownames(Animals2), "\n")
+cat("Nombres de las columnas:\n", colnames(Animals2), "\n")
+```
+
   + Muestra los nombres de las filas y las columnas (`rownames`, `colnames`).
   + Usa la función `intersect` y almacena en la variable commonAnimals los aminales que aparezcan en ambos conjuntos.
   + Usa `setdiff` para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son?. ¿Qué tipo de animales son?
